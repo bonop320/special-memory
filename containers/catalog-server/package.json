@@ -1,0 +1,24 @@
+{
+  "name": "@nullax/catalog-server",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "dredd": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "ramda-adjunct": "^2.10.0"
+  },
+  "dependencies": {
+    "debug": "^4.1.0",
+    "getenv": "^0.7.0",
+    "koa": "^2.5.3",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "pouchdb": "^7.0.0",
+    "pouchdb-find": "^7.0.0",
+    "ramda": "^0.25.0"
+  }
+}
