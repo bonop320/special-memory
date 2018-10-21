@@ -1,0 +1,59 @@
+{
+    "id": "d78e3779-dbd6-4cbe-a501-018b6053ca6b",
+    "scope": "products",
+    "definitions": {
+        "uri": {
+            "type": "string"
+        },
+        "color": {
+            "type": "string"
+        },
+        "date": {
+            "type": "string",
+            "format": "date-time",
+            "description": "The ISO 8601 date"
+        }
+    },
+    "properties": {
+        "id": {
+            "$ref": "#/definitions/uri"
+        },
+        "name": {
+            "type": "string"
+        },
+        "color": {
+            "$ref": "#/definitions/color"
+        },
+        "outputPower": {
+            "type": "number"
+        },
+        "isAccessoryOrSparePartFor": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "hasQuickcharge": {
+          "type": "boolean"
+        },
+        "productionDate": {
+            "$ref": "#/definitions/date"
+        },
+        "releaseDate": {
+            "$ref": "#/definitions/date"
+        }
+    },
+    "data": {
+        "id": "sony-quick-charger-uch12w",
+        "name": "Sony USB Type-C Quick Charger",
+        "color": "black",
+        "outputPower": 16.2,
+        "hasQuickcharge": true,
+        "isAccessoryOrSparePartFor": [
+          "/product-models/sony-xperia-xz1"
+        ],
+        "productionDate": "2018-10-21T17:44:55+04:00",
+        "releaseDate": "2018-10-21T17:44:55+04:00"
+    }
+}
+

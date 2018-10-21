@@ -1,0 +1,55 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# Products
+
+# Group Product
+
+## Product Model [/product-models/{id}]
+
++ Parameters
+    + id (string)
+
+        The identifier of the desired product model.
+
+        - Sample: `d78e3779-dbd6-4cbe-a501-018b6053ca6b`
+
+- Attributes (object)
+    - id (string, required)
+
+        + Sample: `d78e3779-dbd6-4cbe-a501-018b6053ca6b`
+
+    - scope (string, fixed)
+
+        + Default: `product-models`
+
+    + definitions (object)
+
+    + properties (object)
+
+    + data (object)
+
+### Retreive [GET]
+
+Retrieves the product model with the given ID.
+
++ Response 200 (application/json)
+
+    + Attributes (Product Model)
+
+## Product Models Collection [/product-models{?limit,offset}]
+
++ Parameters
+    - limit (number, optional)
+
+        A limit on the number of objects to be returned. Limit can range
+        between 1 and 100 items.
+
+        + Default: `10`
+
+    - offset (number, optional)
+
++ Attributes (object)
+    + members (array[Product Model])
+
+# Data Structures

@@ -6,11 +6,15 @@ const logger = require('koa-logger')
 
 const getenv = require('getenv')
 
+const routes = require('./lib/routes')
+
 // Init server app
 
 const app = new Koa()
 
 app.use(logger())
+
+app.use(routes())
 
 // Start app
 

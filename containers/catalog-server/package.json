@@ -7,7 +7,6 @@
   },
   "devDependencies": {
     "ava": "^0.25.0",
-    "dredd": "^5.2.0",
     "nodemon": "^1.18.4",
     "ramda-adjunct": "^2.10.0"
   },
